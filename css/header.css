@@ -1,0 +1,108 @@
+#burger div {
+  width: 1.5rem;
+  height: 0.2rem;
+  background: #000;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+  -webkit-transform-origin: 1px;
+  -ms-transform-origin: 1px;
+  margin-bottom: 0.3rem;
+}
+#burger div:first-child {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+}
+#burger div:nth-child(2) {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+}
+#burger div:nth-child(3) {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+}
+/* #burger.changed {
+    background: transparent;
+  }
+  #burger.changed div {
+    background: white;
+  } */
+#burger.changed div:nth-child(1) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+#burger.changed div:nth-child(2) {
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  opacity: 0;
+}
+#burger.changed div:nth-child(3) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+.nav-toggle-btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.nav-item {
+  margin: 0 0.8em;
+}
+.nav-item .nav-link,
+.dropdown-item {
+  font-weight: 500;
+  color: rgba(41, 41, 41, 0.7);
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #00cda7 !important;
+}
+.dropdown-menu {
+  left: auto;
+}
+
+.create-account-btn {
+  background: #00cda7;
+  border-radius: 9.16667px;
+  color: white !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #00cda7 !important;
+}
+.nav-link.create-account-btn:hover {
+  opacity: 0.9;
+  color: white !important;
+}
+
+@media (max-width: 768.98px) {
+  .nav-item .nav-link,
+  .dropdown-item {
+    margin: 0.8em 0;
+  }
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    top: auto;
+    left: 30%;
+  }
+  .nav-item .nav-link,
+  .dropdown-item {
+    text-align: center;
+  }
+}
+@media (max-width: 576.98px) {
+  .navbar-nav .dropdown-menu {
+    left: auto;
+  }
+}

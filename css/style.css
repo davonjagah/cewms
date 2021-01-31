@@ -1,0 +1,582 @@
+@import "./header.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid rgba(41, 41, 41, 0.7) !important;
+}
+.select2-container--classic
+  .select2-search--inline
+  .select2-search__field:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+.tawk-container {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  z-index: 1030;
+}
+.tawk-container img {
+  width: 50%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+section a {
+  color: rgba(41, 41, 41, 0.7);
+}
+section a:hover,
+.signin-label .reset-link:hover,
+footer a:hover {
+  color: #00cda7;
+  text-decoration: none;
+}
+
+/* main {
+  margin-top: 3em;
+} */
+section.tagline {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 3em; */
+  margin-top: 4em;
+}
+.home-tagline {
+  background-image: linear-gradient(
+      rgba(41, 41, 41, 0.4),
+      rgba(41, 41, 41, 0.4)
+    ),
+    url("../images/clean.jpg");
+}
+.branding-tagline {
+  background-image: linear-gradient(
+      rgba(41, 41, 41, 0.4),
+      rgba(41, 41, 41, 0.4)
+    ),
+    url("https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1606503763/farmers/Rectangle_79_pdlq4l.jpg");
+  height: 30vh !important;
+}
+.market-tagline {
+  background-image: linear-gradient(
+      rgba(41, 41, 41, 0.4),
+      rgba(41, 41, 41, 0.4)
+    ),
+    url("https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1606510828/farmers/Rectangle_82_jkqmsr.jpg");
+  height: 30vh !important;
+}
+.digital-tagline {
+  background-image: linear-gradient(
+      rgba(41, 41, 41, 0.4),
+      rgba(41, 41, 41, 0.4)
+    ),
+    url("https://res.cloudinary.com/ademolamadelewi/image/upload/f_auto,q_auto/v1606513781/farmers/Rectangle_83_ucj3pc.jpg");
+  height: 30vh !important;
+}
+.tagline-texts {
+  font-family: "Lato", sans-serif;
+  width: 35%;
+  color: white;
+}
+/* .digital-tagline .tagline-texts {
+  width: 40%;
+} */
+.branding-tagline .tagline-texts,
+.digital-tagline .tagline-texts,
+.market-tagline .tagline-texts {
+  width: 100%;
+}
+/* .tagline-title,
+.who-title {
+  font-weight: 700;
+} */
+.tagline-p {
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.tagline-btn {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  background: #00cda7;
+  border-radius: 7px;
+  text-transform: uppercase;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.branding-tagline .tagline-btn,
+.market-tagline .tagline-btn,
+.digital-tagline .tagline-btn {
+  width: 150px;
+  height: 40px;
+  font-size: 0.8rem;
+}
+.tagline-btn:hover,
+.modal-submit:hover,
+.create-act:hover,
+.google-btn:hover,
+.facebook-btn:hover {
+  color: white;
+  opacity: 0.9;
+  text-decoration: none;
+}
+.services-header-icon {
+  height: 30px;
+  width: 30px;
+  color: #00cda7;
+}
+.shadow-color-image {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background: #00cda7;
+}
+.shadow-color-image img {
+  position: absolute;
+
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+.benefits .shadow-color-image,
+.benefits .shadow-color-image img {
+  height: 250px;
+  width: 250px;
+}
+.benefits .row,
+.contact .row {
+  width: 95%;
+}
+/* .custom {
+  width: 75%;
+} */
+.shadow-color-image .services-img {
+  top: 50px;
+  left: 50px;
+}
+.shadow-color-image .contact-img {
+  bottom: 50px;
+  right: 50px;
+}
+.table-bg {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(0, 205, 167, 0.1) 61%
+  );
+}
+.branding-header,
+.market-header {
+  background: rgba(0, 205, 167, 0.1);
+  margin-bottom: 1.3em;
+}
+/* .ussd-section {
+  position: relative;
+  height: 80vh;
+}
+.table-main-header {
+  height: 20vh;
+  background: rgba(0, 205, 167, 0.1);
+}
+.table-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+} */
+/* .contact .container {
+  width: 70%;
+} */
+.contact-btn {
+  border: 1px solid #292929;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+  background: #292929;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+footer {
+  background: #292929;
+  color: white;
+}
+footer input:focus {
+  border: 0 !important;
+}
+footer a,
+footer p,
+footer li {
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer a img {
+  padding: 0 1.5em;
+  height: 30px;
+}
+footer a img:first-child {
+  padding-left: 0;
+}
+.footer-header {
+  font-weight: 500;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  margin: 1em 0;
+}
+.subscribe-form input {
+  height: 58px;
+  border: 0;
+}
+.subscribe-form .email {
+  border-radius: 5px 0 0 5px;
+}
+.subscribe-form .submit-btn {
+  border-radius: 0 5px 5px 0;
+  background: #00cda7;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+}
+.subscribe-form .submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* PRICING */
+.pricing-header {
+  margin-top: 9em;
+  margin-bottom: 6em;
+}
+.pricing-main {
+  letter-spacing: 0.05em;
+  color: #292929;
+}
+.table-bordered td,
+.table-bordered th,
+.table thead th {
+  border: 2px solid rgba(41, 41, 41, 0.5);
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: rgba(41, 41, 41, 0.8);
+}
+.table td,
+.table th,
+.table thead th {
+  vertical-align: middle;
+  background-color: white;
+}
+.start-btn {
+  border: 1px solid #00cda7;
+  color: #00cda7;
+  border-radius: 10px;
+  font-weight: bold;
+  min-width: 150px;
+  max-width: 200px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-submit {
+  border-radius: 10px;
+  font-weight: bold;
+  min-width: 150px;
+  height: 50px;
+  color: white;
+  background-color: #00cda7;
+}
+
+.start-btn:hover {
+  background-color: #00cda7;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.custom-modal {
+  border-radius: 10px;
+}
+
+/* SIGNUP & SIGNIN */
+.account {
+  height: 100vh;
+}
+.account .main-row,
+.logo-column,
+.form-column {
+  height: 100%;
+}
+.logo-column,
+.form-column,
+.verify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-column {
+  background: #292929;
+}
+input[type="checkbox"] {
+  visibility: hidden;
+}
+label {
+  cursor: pointer;
+}
+.checkbox + label:before {
+  border: 1px solid #333;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 0.25em 0 0;
+  padding: 0;
+  width: 16px;
+  border-radius: 2px;
+}
+.checkbox:checked + label:before {
+  background: #292929;
+  color: white;
+  font-weight: bold;
+  content: "\2713";
+  text-align: center;
+}
+.checkbox:checked + label:after {
+  font-weight: bold;
+}
+
+.checkbox:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+.form-column a {
+  color: rgba(255, 121, 0, 0.7);
+}
+.create-act {
+  background: #292929;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  font-weight: 700;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.button-container img {
+  width: 7%;
+}
+.google-btn {
+  background: #ea4335;
+}
+.facebook-btn {
+  background: #4285f4;
+}
+.google-btn,
+.facebook-btn {
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  height: 50px;
+}
+.form-column .container {
+  width: 75%;
+}
+.border-container {
+  margin: 7em 0;
+  box-shadow: 0px 2px 10px 2px rgba(0, 205, 167, 0.15);
+  padding: 3em;
+}
+.signin-label .reset-link {
+  color: rgba(41, 41, 41, 0.7);
+}
+.successful-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commerce-header {
+  background: #292929;
+}
+.commerce-header h4 {
+  letter-spacing: 0.005em;
+  color: white;
+}
+.commerce-header h4 span {
+  border-bottom: 2px solid #00cda7;
+}
+.verify-link {
+  color: #00cda7 !important;
+}
+@media (min-width: 1024.98px) {
+  #tawkModal .modal-body,
+  #tawkModal .modal-body .container,
+  #tawkModal iframe {
+    height: 100%;
+    background: transparent !important;
+  }
+  .modal-open {
+    overflow: auto;
+  }
+  .modal-backdrop {
+    background-color: transparent;
+  }
+  #tawkModal .modal-content {
+    height: 550px;
+  }
+  #tawkModal .modal-dialog {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+  }
+}
+@media (max-width: 1024.98px) {
+  section.tagline {
+    padding-left: 0;
+    height: 40vh;
+    background-position: center;
+  }
+  .tagline-texts {
+    width: 40%;
+  }
+  .digital-tagline .tagline-texts {
+    width: 60%;
+  }
+  .shadow-color-image {
+    height: 250px;
+    width: 250px;
+  }
+  .shadow-color-image img {
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+  }
+  .shadow-color-image .services-img {
+    top: 30px;
+    left: 30px;
+  }
+  .shadow-color-image .contact-img {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+@media (max-width: 768.98px) {
+  section.tagline {
+    padding-left: 0;
+    height: 50vh;
+    background-position: center;
+  }
+  .tagline-texts {
+    width: 60%;
+  }
+  .digital-tagline .tagline-texts {
+    width: 90%;
+  }
+
+  .contact .container {
+    width: 100%;
+  }
+  .table thead th {
+    font-size: 0.8rem;
+  }
+  /* .custom {
+    width: 95%;
+  } */
+  .form-column .container {
+    width: 95%;
+  }
+  .verify {
+    height: 80vh;
+  }
+}
+@media (max-width: 576.98px) {
+  section.tagline {
+    padding-left: 0;
+    height: 70vh;
+    background-position: center;
+  }
+  .tagline-texts {
+    width: 90%;
+  }
+  .contact .container {
+    width: 95%;
+  }
+  .branding-tagline .tagline-texts h1,
+  .digital-tagline .tagline-texts h1,
+  .market-tagline .tagline-texts h1 {
+    font-size: 1.7rem;
+  }
+  .subscribe-form input {
+    height: 48px;
+    font-size: 0.9rem;
+  }
+  .table thead th {
+    font-size: 0.5rem;
+  }
+  .table-bordered td {
+    font-size: 0.7rem;
+  }
+  .form-column {
+    margin-top: 2em;
+  }
+  .account {
+    height: 100%;
+  }
+  .border-container {
+    padding: 3em 0.8em;
+  }
+  .forgot-container {
+    height: 70vh;
+  }
+}
+@media (max-width: 320.98px) {
+  .digital-tagline .tagline-title {
+    font-size: 1.8rem;
+  }
+  .signin-label {
+    font-size: 0.8rem;
+  }
+}
